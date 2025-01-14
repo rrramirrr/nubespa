@@ -508,16 +508,16 @@ section{
 @media (max-width: 768px) {
     /* Ajustar el título principal */
     .home .content h3 {
-        font-size: 2.5rem; /* Tamaño más pequeño */
+        font-size: 2.8rem; /* Tamaño más pequeño */
     }
 
     .home .content p {
-        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        font-size: 1.8rem; /* Ajustar el tamaño del texto */
         padding: 0.5rem 0;
     }
 
     .home .content .btn {
-        font-size: 1.2rem; /* Botón más pequeño */
+        font-size: 2.2rem; /* Botón más pequeño */
         padding: 0.5rem 1.5rem;
     }
 
@@ -541,34 +541,116 @@ section{
         max-width: 100%;
         height: auto; /* Ajustar tamaño de las imágenes */
     }
-}
 
-/* Estilos para pantallas extra pequeñas */
-@media (max-width: 480px) {
-    .home .content h3 {
-        font-size: 2rem; /* Aún más pequeño */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
+        color: #fff;
     }
-
-    .home .content p {
-        font-size: 1rem;
-    }
-
-    .home .content .btn {
-        font-size: 1rem;
-        padding: 0.4rem 1rem;
-    }
-}
-
-@media (max-width: 768px) {
+    
     .navbar a {
-        font-size: 1.2rem; /* Texto más pequeño */
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+    
+    .navbar img {
+        max-width: 50px;
+        height: auto;
+    }
+    
+    .navbar .social-icons img {
+        max-width: 25px;
+        margin: 0 0.5rem;
+    }
+
+
+}
+/* Punto 1: Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajusta el contenedor del navbar */
+    .navbar {
+        display: flex;
+        flex-wrap: wrap; /* Permite distribuir en filas */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        gap: 0.5rem; /* Espacio entre elementos */
+    }
+
+    /* Ajusta el tamaño de los enlaces */
+    .navbar a {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+        padding: 0.3rem 0.5rem; /* Espacio interno */
+    }
+
+    /* Ajusta el logo */
+    .navbar img {
+        max-width: 35px; /* Logo más pequeño */
+        height: auto;
+    }
+
+    /* Ajusta los iconos sociales */
+    .navbar .social-icons img {
+        max-width: 20px; /* Iconos más pequeños */
     }
 }
 
+/* Punto 2: Alinear correctamente los elementos */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia a formato vertical */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .navbar a {
+        margin: 0.2rem 0; /* Espacio entre cada enlace */
+    }
+
+    .navbar .social-icons {
+        margin-top: 0.5rem; /* Separación entre iconos sociales y enlaces */
+    }
+}
+
+/* Punto 3: Diseño limpio y simétrico en móviles pequeños */
 @media (max-width: 480px) {
-    .whatsapp img {
-        max-width: 20px; /* Aún más pequeño para pantallas muy pequeñas */
+    .navbar {
+        flex-direction: column; /* Todo en una columna */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar img {
+        max-width: 30px; /* Ajusta el logo */
+    }
+
+    .navbar a {
+        font-size: 0.8rem; /* Texto más pequeño */
+    }
+
+    .navbar .social-icons img {
+        max-width: 15px; /* Iconos más pequeños */
+        margin: 0 0.3rem; /* Espaciado uniforme */
     }
 }
 
+/* Punto 4: Mantener diseño original en pantallas grandes */
+@media (min-width: 769px) {
+    .navbar {
+        justify-content: space-between; /* Diseño actual */
+    }
 
+    .navbar a {
+        font-size: 1rem; /* Tamaño normal */
+    }
+
+    .navbar img {
+        max-width: 50px; /* Tamaño original */
+    }
+
+    .navbar .social-icons img {
+        max-width: 25px; /* Tamaño original */
+    }
+}
