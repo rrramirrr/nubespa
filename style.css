@@ -528,15 +528,15 @@ section{
     }
 
     .home .content h3 {
-        font-size: 2.5rem; /* Tamaño más pequeño para smartphones */
+        font-size: 6rem; /* Tamaño más pequeño para smartphones */
     }
 
     .home .content p {
-        font-size: 1.2rem;
+        font-size: 3rem;
     }
 
     .home .btn {
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 0.6rem 1.5rem;
     }
 }
@@ -554,23 +554,25 @@ section{
         font-size: 0.9rem; /* Reducir tamaño del texto */
         margin: 0.2rem 0;
     }
-    /* Sección del texto y botón central */
-    .home .content h3 {
-        font-size: 2.5rem; /* Tamaño del texto del título */
-        text-align: center; /* Asegura alineación centrada */
-        margin-bottom: 1rem; /* Espaciado inferior */
-    }
-
+    /* Texto de la descripción */
     .home .content p {
-        font-size: 1.4rem; /* Tamaño más grande para el texto */
+        font-size: 1.8rem; /* Incrementa el tamaño del texto */
         text-align: center;
-        margin-bottom: 1.5rem; /* Más espacio debajo del texto */
+        margin-bottom: 2rem; /* Agrega más espacio inferior */
+        line-height: 1.5; /* Mejora la legibilidad */
     }
 
+    /* Título */
+    .home .content h3 {
+        font-size: 3rem; /* Título más grande */
+        margin-bottom: 1.5rem; /* Espaciado entre título y descripción */
+        text-align: center;
+    }
+
+    /* Botón */
     .home .btn {
-        font-size: 1.2rem; /* Ajusta el tamaño del botón */
-        padding: 0.8rem 2rem; /* Tamaño del botón más amplio */
-        border-radius: 10px; /* Bordes suaves */
+        font-size: 1.4rem; /* Botón más grande */
+        padding: 1rem 2.5rem; /* Ajusta tamaño y espacio del botón */
         margin-top: 1rem; /* Espacio superior */
     }
 
