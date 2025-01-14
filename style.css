@@ -133,6 +133,8 @@ section{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .header .icons {
@@ -559,7 +561,7 @@ section{
     }
 
     .home .btn {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding: 0.5rem 1.2rem;
     }
 }

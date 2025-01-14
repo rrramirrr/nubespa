@@ -27,7 +27,7 @@ document.getElementById("instagram-btn").addEventListener("click", function() {
 });
 
 document.getElementById("facebook-btn").addEventListener("click", function() {
-    window.open("https://www.facebook.com/tu_cuenta_de_facebook", "_blank");
+    window.open("https://www.facebook.com/share/14Z7SJD8BM/?mibextid=wwXIfr", "_blank");
 });
 
 document.getElementById("whatsapp-btn").addEventListener("click", function() {
