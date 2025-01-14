@@ -554,18 +554,24 @@ section{
         font-size: 0.9rem; /* Reducir tamaño del texto */
         margin: 0.2rem 0;
     }
-
+    /* Sección del texto y botón central */
     .home .content h3 {
-        font-size: 2rem; /* Ajusta el tamaño del título */
+        font-size: 2.5rem; /* Tamaño del texto del título */
+        text-align: center; /* Asegura alineación centrada */
+        margin-bottom: 1rem; /* Espaciado inferior */
     }
 
     .home .content p {
-        font-size: 1rem;
+        font-size: 1.4rem; /* Tamaño más grande para el texto */
+        text-align: center;
+        margin-bottom: 1.5rem; /* Más espacio debajo del texto */
     }
 
     .home .btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 1.2rem;
+        font-size: 1.2rem; /* Ajusta el tamaño del botón */
+        padding: 0.8rem 2rem; /* Tamaño del botón más amplio */
+        border-radius: 10px; /* Bordes suaves */
+        margin-top: 1rem; /* Espacio superior */
     }
 
     /* Ajustar slider en pantallas pequeñas */
