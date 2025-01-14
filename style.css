@@ -504,153 +504,62 @@ section{
     }
 }
 
-/* Estilos para pantallas pequeñas (smartphones) */
+/* Ajustes para pantallas pequeñas (smartphones) */
 @media (max-width: 768px) {
-    /* Ajustar el título principal */
+    .navbar {
+        justify-content: center; /* Centra todos los elementos */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Reduce el tamaño de las fuentes */
+        margin: 0.3rem 0.8rem;
+    }
+
+    .navbar img {
+        max-width: 40px; /* Ajusta el tamaño del logo */
+    }
+
+    .navbar .social-icons img {
+        max-width: 20px; /* Reduce el tamaño de los íconos sociales */
+    }
+
     .home .content h3 {
-        font-size: 2.8rem; /* Tamaño más pequeño */
+        font-size: 2.5rem; /* Tamaño más pequeño para smartphones */
     }
 
     .home .content p {
-        font-size: 1.8rem; /* Ajustar el tamaño del texto */
-        padding: 0.5rem 0;
+        font-size: 1.2rem;
     }
 
-    .home .content .btn {
-        font-size: 2.2rem; /* Botón más pequeño */
-        padding: 0.5rem 1.5rem;
-    }
-
-    /* Ajustar servicios */
-    .menu-item {
-        width: 90%; /* Reducir ancho para pantallas pequeñas */
-        margin: 1rem auto; /* Centrar en la pantalla */
-    }
-
-    /* Ajustar imagen del hero */
-    .home {
-        padding: 2rem 1rem; /* Más espacio interno */
-    }
-
-    /* Ajustar el slider de servicios */
-    .slider {
-        display: block; /* Cambiar a una columna */
-    }
-
-    .slider img {
-        max-width: 100%;
-        height: auto; /* Ajustar tamaño de las imágenes */
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
-        color: #fff;
-    }
-    
-    .navbar a {
-        text-decoration: none;
-        color: #fff;
+    .home .btn {
         font-size: 1rem;
-        margin: 0 1rem;
-    }
-    
-    .navbar img {
-        max-width: 50px;
-        height: auto;
-    }
-    
-    .navbar .social-icons img {
-        max-width: 25px;
-        margin: 0 0.5rem;
-    }
-
-
-}
-/* Punto 1: Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    /* Ajusta el contenedor del navbar */
-    .navbar {
-        display: flex;
-        flex-wrap: wrap; /* Permite distribuir en filas */
-        justify-content: center; /* Centra los elementos horizontalmente */
-        gap: 0.5rem; /* Espacio entre elementos */
-    }
-
-    /* Ajusta el tamaño de los enlaces */
-    .navbar a {
-        font-size: 0.9rem; /* Reduce el tamaño del texto */
-        padding: 0.3rem 0.5rem; /* Espacio interno */
-    }
-
-    /* Ajusta el logo */
-    .navbar img {
-        max-width: 35px; /* Logo más pequeño */
-        height: auto;
-    }
-
-    /* Ajusta los iconos sociales */
-    .navbar .social-icons img {
-        max-width: 20px; /* Iconos más pequeños */
+        padding: 0.6rem 1.5rem;
     }
 }
 
-/* Punto 2: Alinear correctamente los elementos */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Cambia a formato vertical */
-        align-items: center; /* Centra los elementos verticalmente */
-    }
-
-    .navbar a {
-        margin: 0.2rem 0; /* Espacio entre cada enlace */
-    }
-
-    .navbar .social-icons {
-        margin-top: 0.5rem; /* Separación entre iconos sociales y enlaces */
-    }
-}
-
-/* Punto 3: Diseño limpio y simétrico en móviles pequeños */
+/* Ajustes específicos para pantallas muy pequeñas (iPhones compactos y Androids pequeños) */
 @media (max-width: 480px) {
     .navbar {
-        flex-direction: column; /* Todo en una columna */
-        justify-content: center;
+        flex-direction: column; /* Cambia a formato vertical */
         align-items: center;
-    }
-
-    .navbar img {
-        max-width: 30px; /* Ajusta el logo */
+        gap: 0.5rem;
     }
 
     .navbar a {
-        font-size: 0.8rem; /* Texto más pequeño */
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+        margin: 0.2rem 0;
     }
 
-    .navbar .social-icons img {
-        max-width: 15px; /* Iconos más pequeños */
-        margin: 0 0.3rem; /* Espaciado uniforme */
-    }
-}
-
-/* Punto 4: Mantener diseño original en pantallas grandes */
-@media (min-width: 769px) {
-    .navbar {
-        justify-content: space-between; /* Diseño actual */
+    .home .content h3 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
     }
 
-    .navbar a {
-        font-size: 1rem; /* Tamaño normal */
+    .home .content p {
+        font-size: 1rem;
     }
 
-    .navbar img {
-        max-width: 50px; /* Tamaño original */
-    }
-
-    .navbar .social-icons img {
-        max-width: 25px; /* Tamaño original */
+    .home .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
     }
 }
