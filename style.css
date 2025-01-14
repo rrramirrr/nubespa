@@ -44,9 +44,21 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 
-body{
-    background: var(--bg);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
 }
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
+    margin: 0 auto; /* Centrar contenido */
+    padding: 0 1rem; /* Espacio lateral */
+}
+
 
 section{
     padding:2rem 7%;
@@ -116,6 +128,13 @@ section{
     padding-bottom: 0.3rem;
 }
 
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header .icons {
     display: flex;
     align-items: center;
@@ -145,7 +164,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center; /* Centra el contenido horizontalmente */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/home.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/nubespa/images/home.jpg);
     background-size: cover;
     background-position: center;
     color: #fff; /* Asegura que todo el texto sea blanco */
@@ -452,6 +471,10 @@ section{
     overflow: hidden;
 }
 
+.whatsapp img {
+    max-width: 30px;
+    height: auto;
+}
 
 
 
@@ -480,4 +503,72 @@ section{
         padding:2rem 7%;
     }
 }
+
+/* Estilos para pantallas pequeñas (smartphones) */
+@media (max-width: 768px) {
+    /* Ajustar el título principal */
+    .home .content h3 {
+        font-size: 2.5rem; /* Tamaño más pequeño */
+    }
+
+    .home .content p {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.5rem 0;
+    }
+
+    .home .content .btn {
+        font-size: 1.2rem; /* Botón más pequeño */
+        padding: 0.5rem 1.5rem;
+    }
+
+    /* Ajustar servicios */
+    .menu-item {
+        width: 90%; /* Reducir ancho para pantallas pequeñas */
+        margin: 1rem auto; /* Centrar en la pantalla */
+    }
+
+    /* Ajustar imagen del hero */
+    .home {
+        padding: 2rem 1rem; /* Más espacio interno */
+    }
+
+    /* Ajustar el slider de servicios */
+    .slider {
+        display: block; /* Cambiar a una columna */
+    }
+
+    .slider img {
+        max-width: 100%;
+        height: auto; /* Ajustar tamaño de las imágenes */
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .home .content h3 {
+        font-size: 2rem; /* Aún más pequeño */
+    }
+
+    .home .content p {
+        font-size: 1rem;
+    }
+
+    .home .content .btn {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 1.2rem; /* Texto más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp img {
+        max-width: 20px; /* Aún más pequeño para pantallas muy pequeñas */
+    }
+}
+
 

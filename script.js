@@ -31,5 +31,5 @@ document.getElementById("facebook-btn").addEventListener("click", function() {
 });
 
 document.getElementById("whatsapp-btn").addEventListener("click", function() {
-    window.open("https://wa.me/5513568128", "_blank");
+    window.open("https://wa.me/message/7INVLXUXH62TO1", "_blank");
 });
