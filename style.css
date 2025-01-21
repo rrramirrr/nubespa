@@ -484,9 +484,6 @@ section{
     height: auto;
 }
 
-
-
-
 /* Animación para el fade-in */
 @keyframes fadeIn {
     0% {
@@ -547,6 +544,7 @@ section{
 
 /* Media Query para pantallas pequeñas (max-width: 480px) */
 @media (max-width: 480px) {
+    
     /* Navbar ajustada para móviles pequeños */
     .navbar {
         flex-direction: column;
@@ -558,6 +556,7 @@ section{
         font-size: 0.9rem; /* Reducir tamaño del texto */
         margin: 0.2rem 0;
     }
+
     /* Texto de la descripción */
     .home .content p {
         font-size: 1.8rem; /* Incrementa el tamaño del texto */
@@ -593,4 +592,5 @@ section{
     .swiper-slide img {
         width: 85%; /* Hacer que las imágenes se adapten mejor */
     }
+
 }
